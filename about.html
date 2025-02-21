@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - SPP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4834d4',
+                        secondary: '#686de0',
+                        accent: '#30336b'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-primary to-secondary text-white text-center py-8">
+        <img src="/api/placeholder/150/150" alt="SPP Logo" class="w-36 h-36 mx-auto mb-4 rounded-full">
+        <h1 class="text-3xl font-bold mb-2">SPP - Société Poly Productions</h1>
+        <p class="text-lg">Votre partenaire en équipements électriques et électroménagers</p>
+    </header>
+    
+    <!-- Navigation -->
+    <nav class="bg-accent text-white py-4">
+        <ul class="flex justify-center space-x-8 flex-wrap">
+            <li><a href="index.html" class="hover:text-gray-300 transition-colors">Accueil</a></li>
+            <li><a href="about.html" class="hover:text-gray-300 transition-colors">À propos</a></li>
+            <li><a href="products.html" class="hover:text-gray-300 transition-colors">Nos Produits</a></li>
+            <li><a href="contact.html" class="hover:text-gray-300 transition-colors">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main class="flex-grow max-w-7xl mx-auto px-4 py-8">
+        <h2 class="text-3xl font-bold text-primary mb-8 text-center">À propos de SPP</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="space-y-4">
+                <h3 class="text-2xl font-semibold text-secondary">Notre Histoire</h3>
+                <p class="text-gray-700">Fondée avec la vision de fournir des produits de qualité et un service exceptionnel, SPP s'est établie comme un leader dans la distribution d'équipements électriques et électroménagers.</p>
+                
+                <h3 class="text-2xl font-semibold text-secondary mt-6">Notre Mission</h3>
+                <p class="text-gray-700">Notre mission est de fournir à nos clients les meilleurs produits et services, en mettant l'accent sur la qualité, la sécurité et la satisfaction client.</p>
+            </div>
+            
+            <div class="space-y-4">
+                <h3 class="text-2xl font-semibold text-secondary">Nos Valeurs</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                    <li>Qualité et fiabilité des produits</li>
+                    <li>Service client exemplaire</li>
+                    <li>Innovation continue</li>
+                    <li>Respect de l'environnement</li>
+                    <li>Engagement communautaire</li>
+                </ul>
+                
+                <h3 class="text-2xl font-semibold text-secondary mt-6">Notre Équipe</h3>
+                <p class="text-gray-700">Notre équipe de professionnels qualifiés est dédiée à vous offrir le meilleur service possible et à vous accompagner dans tous vos projets.</p>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="bg-accent text-white text-center py-4 mt-12">
+        <p>&copy; 2025 SPP - Société Poly Productions. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
