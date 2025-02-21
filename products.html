@@ -3,92 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nos Produits - SPP</title>
+    <title>SPP - Société Poly Productions</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#4834d4',
-                        secondary: '#686de0',
-                        accent: '#30336b'
-                    }
-                }
-            }
-        }
-    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body class="font-sans min-h-screen flex flex-col">
+<body class="min-h-screen bg-gray-50">
     <!-- Header -->
-    <header class="bg-gradient-to-r from-primary to-secondary text-white text-center py-8">
-        <img src="/api/placeholder/150/150" alt="SPP Logo" class="w-36 h-36 mx-auto mb-4 rounded-full">
-        <h1 class="text-3xl font-bold mb-2">SPP - Société Poly Productions</h1>
-        <p class="text-lg">Votre partenaire en équipements électriques et électroménagers</p>
-    </header>
-    
-    <!-- Navigation -->
-    <nav class="bg-accent text-white py-4">
-        <ul class="flex justify-center space-x-8 flex-wrap">
-            <li><a href="index.html" class="hover:text-gray-300 transition-colors">Accueil</a></li>
-            <li><a href="about.html" class="hover:text-gray-300 transition-colors">À propos</a></li>
-            <li><a href="products.html" class="hover:text-gray-300 transition-colors">Nos Produits</a></li>
-            <li><a href="contact.html" class="hover:text-gray-300 transition-colors">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <main class="flex-grow max-w-7xl mx-auto px-4 py-8">
-        <h2 class="text-3xl font-bold text-primary mb-8 text-center">Nos Produits</h2>
-        
-        <div class="space-y-12">
-            <!-- Électroménagers -->
-            <section class="border-b pb-8">
-                <h3 class="text-2xl font-semibold text-secondary mb-4">Appareils électroménagers</h3>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="border rounded-lg p-4 hover:shadow-lg transition-shadow">
-                        <img src="/api/placeholder/300/200" alt="Réfrigérateurs" class="w-full h-48 object-cover rounded mb-4">
-                        <h4 class="font-semibold mb-2">Réfrigérateurs</h4>
-                        <p class="text-gray-600">Large gamme de réfrigérateurs modernes et économes en énergie.</p>
-                    </div>
-                    <div class="border rounded-lg p-4 hover:shadow-lg transition-shadow">
-                        <img src="/api/placeholder/300/200" alt="Lave-linge" class="w-full h-48 object-cover rounded mb-4">
-                        <h4 class="font-semibold mb-2">Lave-linge</h4>
-                        <p class="text-gray-600">Machines à laver performantes pour tous les besoins.</p>
-                    </div>
-                    <div class="border rounded-lg p-4 hover:shadow-lg transition-shadow">
-                        <img src="/api/placeholder/300/200" alt="Cuisinières" class="w-full h-48 object-cover rounded mb-4">
-                        <h4 class="font-semibold mb-2">Cuisinières</h4>
-                        <p class="text-gray-600">Cuisinières électriques et à gaz de haute qualité.</p>
-                    </div>
+    <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <div class="text-3xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
+                    SPP
                 </div>
-            </section>
-
-            <!-- Équipements électriques -->
-            <section class="border-b pb-8">
-                <h3 class="text-2xl font-semibold text-secondary mb-4">Équipements électriques</h3>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="border rounded-lg p-4 hover:shadow-lg transition-shadow">
-                        <img src="/api/placeholder/300/200" alt="Câblage" class="w-full h-48 object-cover rounded mb-4">
-                        <h4 class="font-semibold mb-2">Câblage</h4>
-                        <p class="text-gray-600">Câbles et fils électriques de haute qualité.</p>
-                    </div>
-                    <div class="border rounded-lg p-4 hover:shadow-lg transition-shadow">
-                        <img src="/api/placeholder/300/200" alt="Disjoncteurs" class="w-full h-48 object-cover rounded mb-4">
-                        <h4 class="font-semibold mb-2">Disjoncteurs</h4>
-                        <p class="text-gray-600">Protection électrique fiable pour votre installation.</p>
-                    </div>
-                    <div class="border rounded-lg p-4 hover:shadow-lg transition-shadow">
-                        <img src="/api/placeholder/300/200" alt="Éclairage" class="w-full h-48 object-cover rounded mb-4">
-                        <h4 class="font-semibold mb-2">Éclairage</h4>
-                        <p class="text-gray-600">Solutions d'éclairage LED économiques.</p>
-                    </div>
+                <div class="hidden md:block text-sm text-gray-500">
+                    Société Poly Productions
                 </div>
-            </section>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-gray-600">
+                <a href="#accueil" class="hover:text-purple-600">Accueil</a>
+                <a href="#produits" class="hover:text-purple-600">Produits</a>
+                <a href="#contact" class="hover:text-purple-600">Contact</a>
+            </nav>
         </div>
-    </main>
-    
-    <footer class="bg-accent text-white text-center py-4 mt-12">
-        <p>&copy; 2025 SPP - Société Poly Productions. Tous droits réservés.</p>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-r from-purple-600 to-blue-500 text-white">
+        <div class="max-w-7xl mx-auto px-4 py-16 text-center">
+            <h1 class="text-4xl font-bold mb-4">
+                Votre satisfaction et votre sécurité, notre priorité
+            </h1>
+            <p class="text-xl max-w-2xl mx-auto">
+                Découvrez notre large gamme de produits électroménagers, électriques et plus encore
+            </p>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <div class="max-w-7xl mx-auto px-4 py-16" id="produits">
+        <h2 class="text-3xl font-bold text-center mb-12">Nos Produits et Services</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Product Card 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div class="flex flex-col items-center text-center">
+                    <i class="fas fa-shopping-bag text-4xl text-purple-600"></i>
+                    <h3 class="text-xl font-semibold mt-4 mb-2">Appareils électroménagers</h3>
+                    <p class="text-gray-600">Large gamme d'appareils électroménagers de qualité</p>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div class="flex flex-col items-center text-center">
+                    <i class="fas fa-tools text-4xl text-purple-600"></i>
+                    <h3 class="text-xl font-semibold mt-4 mb-2">Équipements électriques</h3>
+                    <p class="text-gray-600">Équipements électriques professionnels et grand public</p>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div class="flex flex-col items-center text-center">
+                    <i class="fas fa-microchip text-4xl text-purple-600"></i>
+                    <h3 class="text-xl font-semibold mt-4 mb-2">Composants électroniques</h3>
+                    <p class="text-gray-600">Composants électroniques pour tous vos projets</p>
+                </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div class="flex flex-col items-center text-center">
+                    <i class="fas fa-tshirt text-4xl text-purple-600"></i>
+                    <h3 class="text-xl font-semibold mt-4 mb-2">Articles vestimentaires</h3>
+                    <p class="text-gray-600">Mode vestimentaire pour tous les styles</p>
+                </div>
+            </div>
+
+            <!-- Product Card 5 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div class="flex flex-col items-center text-center">
+                    <i class="fas fa-bolt text-4xl text-purple-600"></i>
+                    <h3 class="text-xl font-semibold mt-4 mb-2">Travaux d'électricité</h3>
+                    <p class="text-gray-600">Services d'installation et maintenance électrique</p>
+                </div>
+            </div>
+
+            <!-- Product Card 6 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div class="flex flex-col items-center text-center">
+                    <i class="fas fa-shopping-basket text-4xl text-purple-600"></i>
+                    <h3 class="text-xl font-semibold mt-4 mb-2">Produits alimentaires</h3>
+                    <p class="text-gray-600">Sélection de produits alimentaires de qualité</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="bg-gray-100" id="contact">
+        <div class="max-w-7xl mx-auto px-4 py-16">
+            <h2 class="text-3xl font-bold text-center mb-12">Contactez-nous</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <!-- Phone -->
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-phone text-2xl text-purple-600 mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">Téléphone</h3>
+                    <p class="text-gray-600">+123 456 789</p>
+                </div>
+
+                <!-- Email -->
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-envelope text-2xl text-purple-600 mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">Email</h3>
+                    <p class="text-gray-600">contact@spp.com</p>
+                </div>
+
+                <!-- Address -->
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-building text-2xl text-purple-600 mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">Adresse</h3>
+                    <p class="text-gray-600">123 Rue Example, Ville</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 py-8 text-center">
+            <p>© <span id="current-year"></span> Société Poly Productions. Tous droits réservés.</p>
+        </div>
     </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
