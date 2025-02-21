@@ -3,70 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>À propos - SPP</title>
+    <title>À Propos - SPP</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#4834d4',
-                        secondary: '#686de0',
-                        accent: '#30336b'
-                    }
-                }
-            }
-        }
-    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body class="font-sans min-h-screen flex flex-col">
+<body class="min-h-screen bg-gray-50">
     <!-- Header -->
-    <header class="bg-gradient-to-r from-primary to-secondary text-white text-center py-8">
-        <img src="/api/placeholder/150/150" alt="SPP Logo" class="w-36 h-36 mx-auto mb-4 rounded-full">
-        <h1 class="text-3xl font-bold mb-2">SPP - Société Poly Productions</h1>
-        <p class="text-lg">Votre partenaire en équipements électriques et électroménagers</p>
-    </header>
-    
-    <!-- Navigation -->
-    <nav class="bg-accent text-white py-4">
-        <ul class="flex justify-center space-x-8 flex-wrap">
-            <li><a href="index.html" class="hover:text-gray-300 transition-colors">Accueil</a></li>
-            <li><a href="about.html" class="hover:text-gray-300 transition-colors">À propos</a></li>
-            <li><a href="products.html" class="hover:text-gray-300 transition-colors">Nos Produits</a></li>
-            <li><a href="contact.html" class="hover:text-gray-300 transition-colors">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <main class="flex-grow max-w-7xl mx-auto px-4 py-8">
-        <h2 class="text-3xl font-bold text-primary mb-8 text-center">À propos de SPP</h2>
-        
-        <div class="grid md:grid-cols-2 gap-8">
-            <div class="space-y-4">
-                <h3 class="text-2xl font-semibold text-secondary">Notre Histoire</h3>
-                <p class="text-gray-700">Fondée avec la vision de fournir des produits de qualité et un service exceptionnel, SPP s'est établie comme un leader dans la distribution d'équipements électriques et électroménagers.</p>
-                
-                <h3 class="text-2xl font-semibold text-secondary mt-6">Notre Mission</h3>
-                <p class="text-gray-700">Notre mission est de fournir à nos clients les meilleurs produits et services, en mettant l'accent sur la qualité, la sécurité et la satisfaction client.</p>
+    <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <a href="index.html" class="text-3xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
+                    SPP
+                </a>
+                <div class="hidden md:block text-sm text-gray-500">
+                    Société Poly Productions
+                </div>
             </div>
-            
-            <div class="space-y-4">
-                <h3 class="text-2xl font-semibold text-secondary">Nos Valeurs</h3>
-                <ul class="list-disc list-inside text-gray-700 space-y-2">
-                    <li>Qualité et fiabilité des produits</li>
-                    <li>Service client exemplaire</li>
-                    <li>Innovation continue</li>
-                    <li>Respect de l'environnement</li>
-                    <li>Engagement communautaire</li>
-                </ul>
-                
-                <h3 class="text-2xl font-semibold text-secondary mt-6">Notre Équipe</h3>
-                <p class="text-gray-700">Notre équipe de professionnels qualifiés est dédiée à vous offrir le meilleur service possible et à vous accompagner dans tous vos projets.</p>
-            </div>
+            <nav class="hidden md:flex space-x-6 text-gray-600">
+                <a href="index.html" class="hover:text-purple-600">Accueil</a>
+                <a href="produits.html" class="hover:text-purple-600">Produits</a>
+                <a href="about.html" class="hover:text-purple-600 text-purple-600">À Propos</a>
+                <a href="contact.html" class="hover:text-purple-600">Contact</a>
+            </nav>
         </div>
-    </main>
-    
-    <footer class="bg-accent text-white text-center py-4 mt-12">
-        <p>&copy; 2025 SPP - Société Poly Productions. Tous droits réservés.</p>
+    </header>
+
+    <!-- Page Title -->
+    <div class="bg-gradient-to-r from-purple-600 to-blue-500 text-white">
+        <div class="max-w-7xl mx-auto px-4 py-12 text-center">
+            <h1 class="text-4xl font-bold">À Propos de SPP</h1>
+            <p class="mt-4 text-xl">Découvrez notre histoire et notre mission</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 py-12">
+        <!-- Histoire et Mission -->
+        <section class="mb-16">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 text-purple-600">Notre Histoire</h2>
+                    <p class="text-gray-600 mb-4">
+                        Fondée en 2019, Société Poly Productions (SPP) est née de la vision d'entrepreneurs passionnés par l'innovation et le service client. Notre entreprise a commencé comme un petit magasin d'électroménager et s'est rapidement développée pour devenir un acteur majeur dans plusieurs secteurs.
+                    </p>
+                    <p class="text-gray-600">
+                        Aujourd'hui, SPP est fière de servir des milliers de clients à travers le pays, en leur proposant une large gamme de produits et services de qualité. Notre croissance continue témoigne de notre engagement envers l'excellence et la satisfaction client.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 text-purple-600">Notre Mission</h2>
+                    <p class="text-gray-600 mb-4">
+                        Notre mission est de fournir des produits et services de haute qualité tout en maintenant un niveau de service client exceptionnel. Nous nous efforçons de :
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Garantir la satisfaction totale de nos clients</li>
+                        <li>Offrir des produits innovants et durables</li>
+                        <li>Maintenir des prix compétitifs</li>
+                        <li>Contribuer au développement durable</li>
+                        <li>Soutenir l'économie locale</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center">Découvrez SPP en Vidéo</h2>
+            <div class="aspect-w-16 aspect-h-9">
+                <!-- Remplacez [VIDEO_ID] par l'ID de votre vidéo YouTube -->
+                <iframe 
+                    class="w-full h-[500px] rounded-lg shadow-lg"
+                    src="https://www.youtube.com/embed/Ja21X9iDSfU"
+                    title="Présentation de SPP"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Valeurs -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center">Nos Valeurs</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <i class="fas fa-heart text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Qualité</h3>
+                    <p class="text-gray-600">Nous nous engageons à fournir des produits et services de la plus haute qualité à nos clients.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <i class="fas fa-handshake text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Confiance</h3>
+                    <p class="text-gray-600">La confiance de nos clients est notre priorité absolue dans toutes nos interactions.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <i class="fas fa-leaf text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Durabilité</h3>
+                    <p class="text-gray-600">Nous nous efforçons de minimiser notre impact environnemental dans toutes nos activités.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Équipe -->
+        <section>
+            <h2 class="text-3xl font-bold mb-8 text-center">Notre Équipe</h2>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="/api/placeholder/150/150" alt="Membre de l'équipe" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">Jean Dupont</h3>
+                    <p class="text-purple-600 mb-2">Directeur Général</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="/api/placeholder/150/150" alt="Membre de l'équipe" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">Marie Martin</h3>
+                    <p class="text-purple-600 mb-2">Directrice Commerciale</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="/api/placeholder/150/150" alt="Membre de l'équipe" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">Pierre Dubois</h3>
+                    <p class="text-purple-600 mb-2">Responsable Technique</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="/api/placeholder/150/150" alt="Membre de l'équipe" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">Sophie Bernard</h3>
+                    <p class="text-purple-600 mb-2">Responsable Marketing</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="max-w-7xl mx-auto px-4 py-8 text-center">
+            <p>© <span id="current-year"></span> Société Poly Productions. Tous droits réservés.</p>
+        </div>
     </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
