@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPP - Société Poly Productions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4834d4',
+                        secondary: '#686de0',
+                        accent: '#30336b'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-primary to-secondary text-white text-center py-8">
+        <img src="/api/placeholder/150/150" alt="SPP Logo" class="w-36 h-36 mx-auto mb-4 rounded-full">
+        <h1 class="text-3xl font-bold mb-2">SPP - Société Poly Productions</h1>
+        <p class="text-lg">Votre partenaire en équipements électriques et électroménagers</p>
+    </header>
+    
+    <!-- Navigation -->
+    <nav class="bg-accent text-white py-4">
+        <ul class="flex justify-center space-x-8 flex-wrap">
+            <li><a href="#accueil" class="hover:text-gray-300 transition-colors">Accueil</a></li>
+            <li><a href="#produits" class="hover:text-gray-300 transition-colors">Nos Produits</a></li>
+            <li><a href="#contact" class="hover:text-gray-300 transition-colors">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        <!-- Motto -->
+        <p class="text-center text-primary italic text-xl my-8">
+            "Votre satisfaction et votre sécurité, notre priorité"
+        </p>
+        
+        <!-- Products Grid -->
+        <section id="produits" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+            <!-- Électroménagers -->
+            <div class="border border-gray-200 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+                <h3 class="text-xl font-semibold text-primary mb-4">Appareils électroménagers</h3>
+                <p class="text-gray-600">Découvrez notre gamme complète d'appareils électroménagers de qualité.</p>
+            </div>
+            
+            <!-- Équipements électriques -->
+            <div class="border border-gray-200 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+                <h3 class="text-xl font-semibold text-primary mb-4">Équipements électriques</h3>
+                <p class="text-gray-600">Des solutions électriques professionnelles pour tous vos besoins.</p>
+            </div>
+            
+            <!-- Composants électroniques -->
+            <div class="border border-gray-200 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+                <h3 class="text-xl font-semibold text-primary mb-4">Composants électroniques</h3>
+                <p class="text-gray-600">Large sélection de composants électroniques pour vos projets.</p>
+            </div>
+            
+            <!-- Articles vestimentaires -->
+            <div class="border border-gray-200 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+                <h3 class="text-xl font-semibold text-primary mb-4">Articles vestimentaires</h3>
+                <p class="text-gray-600">Une collection moderne de vêtements pour tous les styles.</p>
+            </div>
+            
+            <!-- Travaux d'électricité -->
+            <div class="border border-gray-200 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+                <h3 class="text-xl font-semibold text-primary mb-4">Travaux d'électricité</h3>
+                <p class="text-gray-600">Une équipe qualifiée pour vos installations électriques.</p>
+            </div>
+            
+            <!-- Produits alimentaires -->
+            <div class="border border-gray-200 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+                <h3 class="text-xl font-semibold text-primary mb-4">Produits alimentaires</h3>
+                <p class="text-gray-600">Une sélection de produits alimentaires de qualité.</p>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-accent text-white text-center py-4 mt-12">
+        <p>&copy; 2025 SPP - Société Poly Productions. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
