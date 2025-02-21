@@ -169,8 +169,31 @@
         </div>
     </footer>
 
-    <script>
+     <script>
+        // Update copyright year
         document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile menu functionality
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const closeMenuButton = document.getElementById('close-menu-button');
+        const overlay = document.getElementById('overlay');
+
+        function openMenu() {
+            mobileMenu.classList.add('active');
+            overlay.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMenu() {
+            mobileMenu.classList.remove('active');
+            overlay.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        mobileMenuButton.addEventListener('click', openMenu);
+        closeMenuButton.addEventListener('click', closeMenu);
+        overlay.addEventListener('click', closeMenu);
     </script>
 </body>
 </html>
