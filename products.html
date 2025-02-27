@@ -73,6 +73,7 @@
     </div>
 
     <!-- Products Categories -->
+<!-- Products Categories -->
 <div class="max-w-7xl mx-auto px-4 py-12">
     <!-- Électroménagers -->
     <section class="mb-16" id="electromenagers">
@@ -95,8 +96,18 @@
             </div>
         </div>
         
-        <!-- Produits supplémentaires électroménagers -->
-        <div class="mt-8">
+        <!-- Bouton pour afficher les produits supplémentaires -->
+        <div class="mt-6 text-center">
+            <button onclick="toggleSection('electro-more')" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded flex items-center mx-auto">
+                <span id="electro-btn-text">Voir plus de produits</span>
+                <svg id="electro-btn-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Produits supplémentaires électroménagers (cachés par défaut) -->
+        <div id="electro-more" class="mt-8 hidden">
             <h3 class="text-xl font-semibold mb-4">Autres produits électroménagers</h3>
             <div class="grid md:grid-cols-4 gap-4">
                 <div class="bg-white rounded p-4 shadow">
@@ -156,8 +167,18 @@
             </div>
         </div>
         
-        <!-- Produits supplémentaires équipements électriques -->
-        <div class="mt-8">
+        <!-- Bouton pour afficher les produits supplémentaires -->
+        <div class="mt-6 text-center">
+            <button onclick="toggleSection('equip-more')" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded flex items-center mx-auto">
+                <span id="equip-btn-text">Voir plus de produits</span>
+                <svg id="equip-btn-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Produits supplémentaires équipements électriques (cachés par défaut) -->
+        <div id="equip-more" class="mt-8 hidden">
             <h3 class="text-xl font-semibold mb-4">Autres équipements électriques</h3>
             <div class="grid md:grid-cols-4 gap-4">
                 <div class="bg-white rounded p-4 shadow">
@@ -209,8 +230,18 @@
             </div>
         </div>
         
-        <!-- Produits supplémentaires vestimentaires -->
-        <div class="mt-8">
+        <!-- Bouton pour afficher les produits supplémentaires -->
+        <div class="mt-6 text-center">
+            <button onclick="toggleSection('vet-more')" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded flex items-center mx-auto">
+                <span id="vet-btn-text">Voir plus de produits</span>
+                <svg id="vet-btn-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Produits supplémentaires vestimentaires (cachés par défaut) -->
+        <div id="vet-more" class="mt-8 hidden">
             <h3 class="text-xl font-semibold mb-4">Autres articles vestimentaires</h3>
             <div class="grid md:grid-cols-4 gap-4">
                 <div class="bg-white rounded p-4 shadow">
@@ -241,7 +272,7 @@
         </div>
     </section>
     
-    <!-- Composants électroniques (nouvelle section) -->
+    <!-- Composants électroniques -->
     <section class="mb-16" id="composants">
         <h2 class="text-2xl font-bold mb-8 text-purple-600">Composants Électroniques</h2>
         <div class="grid md:grid-cols-3 gap-6">
@@ -262,8 +293,18 @@
             </div>
         </div>
         
-        <!-- Produits supplémentaires composants électroniques -->
-        <div class="mt-8">
+        <!-- Bouton pour afficher les produits supplémentaires -->
+        <div class="mt-6 text-center">
+            <button onclick="toggleSection('comp-more')" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded flex items-center mx-auto">
+                <span id="comp-btn-text">Voir plus de produits</span>
+                <svg id="comp-btn-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Produits supplémentaires composants électroniques (cachés par défaut) -->
+        <div id="comp-more" class="mt-8 hidden">
             <h3 class="text-xl font-semibold mb-4">Autres composants électroniques</h3>
             <div class="grid md:grid-cols-4 gap-4">
                 <div class="bg-white rounded p-4 shadow">
@@ -294,7 +335,7 @@
         </div>
     </section>
     
-    <!-- Services d'électricité (nouvelle section) -->
+    <!-- Services d'électricité -->
     <section class="mb-16" id="electricite">
         <h2 class="text-2xl font-bold mb-8 text-purple-600">Travaux d'Électricité</h2>
         <div class="grid md:grid-cols-3 gap-6">
@@ -315,8 +356,18 @@
             </div>
         </div>
         
-        <!-- Services supplémentaires -->
-        <div class="mt-8">
+        <!-- Bouton pour afficher les produits supplémentaires -->
+        <div class="mt-6 text-center">
+            <button onclick="toggleSection('elec-more')" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded flex items-center mx-auto">
+                <span id="elec-btn-text">Voir plus de services</span>
+                <svg id="elec-btn-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Services supplémentaires (cachés par défaut) -->
+        <div id="elec-more" class="mt-8 hidden">
             <h3 class="text-xl font-semibold mb-4">Autres services électriques</h3>
             <div class="grid md:grid-cols-4 gap-4">
                 <div class="bg-white rounded p-4 shadow">
@@ -347,7 +398,7 @@
         </div>
     </section>
     
-    <!-- Produits alimentaires (nouvelle section) -->
+    <!-- Produits alimentaires -->
     <section class="mb-16" id="alimentaires">
         <h2 class="text-2xl font-bold mb-8 text-purple-600">Produits Alimentaires</h2>
         <div class="grid md:grid-cols-3 gap-6">
@@ -368,8 +419,18 @@
             </div>
         </div>
         
-        <!-- Produits supplémentaires alimentaires -->
-        <div class="mt-8">
+        <!-- Bouton pour afficher les produits supplémentaires -->
+        <div class="mt-6 text-center">
+            <button onclick="toggleSection('alim-more')" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded flex items-center mx-auto">
+                <span id="alim-btn-text">Voir plus de produits</span>
+                <svg id="alim-btn-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Produits supplémentaires alimentaires (cachés par défaut) -->
+        <div id="alim-more" class="mt-8 hidden">
             <h3 class="text-xl font-semibold mb-4">Autres produits alimentaires</h3>
             <div class="grid md:grid-cols-4 gap-4">
                 <div class="bg-white rounded p-4 shadow">
@@ -401,6 +462,33 @@
     </section>
 </div>
 
+<!-- Script pour le toggle des sections -->
+<script>
+    function toggleSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        const btnTextId = sectionId.split('-')[0] + '-btn-text';
+        const btnIconId = sectionId.split('-')[0] + '-btn-icon';
+        const btnText = document.getElementById(btnTextId);
+        const btnIcon = document.getElementById(btnIconId);
+        
+        if (section.classList.contains('hidden')) {
+            // Afficher la section
+            section.classList.remove('hidden');
+            btnText.textContent = 'Masquer les produits';
+            btnIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />';
+        } else {
+            // Cacher la section
+            section.classList.add('hidden');
+            btnText.textContent = 'Voir plus de produits';
+            btnIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />';
+            
+            // Si c'est la section des services électriques, adapter le texte
+            if (sectionId === 'elec-more') {
+                btnText.textContent = 'Voir plus de services';
+            }
+        }
+    }
+</script>
     <!-- Footer -->
     <footer class="bg-gray-800 text-white mt-12">
         <div class="max-w-7xl mx-auto px-4 py-8 text-center">
