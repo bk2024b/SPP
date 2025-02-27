@@ -15,11 +15,15 @@
         .mobile-menu.active {
             transform: translateX(0);
         }
+        /* Ajout d'une marge au corps pour compenser la hauteur du header fixe */
+        body {
+            padding-top: 70px; /* Ajustez cette valeur en fonction de la hauteur de votre header */
+        }
     </style>
 </head>
 <body class="min-h-screen bg-gray-50">
-    <!-- Header -->
-    <header class="bg-white shadow-sm">
+    <!-- Header - ajout des classes fixed et top-0 pour le fixer au sommet, z-30 pour qu'il soit au-dessus du contenu -->
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-30 w-full">
         <div class="max-w-7xl mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-4">
@@ -43,7 +47,7 @@
         </div>
     </header>
 
-    <!-- Mobile Navigation -->
+    <!-- Mobile Navigation - augmentation de z-index pour qu'il reste au-dessus du header fixe -->
     <div id="mobile-menu" class="mobile-menu fixed top-0 left-0 bottom-0 w-64 bg-white shadow-lg z-50 md:hidden">
         <div class="p-4">
             <div class="flex justify-between items-center mb-8">
